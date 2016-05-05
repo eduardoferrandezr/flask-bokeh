@@ -1,0 +1,30 @@
+<html>
+<head>
+    <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.css" type="text/css" />
+</head>
+<body style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 14px;">
+<div class=page>
+    Data from: {{year}}
+    <p>
+    Select a year:
+    <select id="selectYear" onchange="window.location = '/' + this.value">
+        <option></option>
+        <option>2005</option>
+        <option>2006</option>
+        <option>2007</option>
+        <option>2008</option>
+        <option>2009</option>
+        <option>2010</option>
+        <option>2011</option>
+        <option>2012</option>
+        <option>2013</option>
+        <option>2014</option>
+    </select>
+    </p>
+
+    {{ div | safe }}
+</div>
+<script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.js"></script>
+{{ script | safe }}
+</body>
+</html>
